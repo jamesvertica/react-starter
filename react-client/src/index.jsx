@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      items: ['one', 'two'] //added two arbitrary items to list 
+      items: [] 
     }
   }
 
