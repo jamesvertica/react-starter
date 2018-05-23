@@ -5,10 +5,10 @@ const List = (props) => (
   <div>
     <h4> List Component </h4>
     There are { props.items.length } items.
-    { props.items.map((item,i) => <ListItem item={item}/>)}
+    { props.items.map((item,i) => <ListItem item={item} key={i}/>)}
   </div>
 )
 
 export default List;
 
-//Create an input list that dynamically adds items to the database and displays them
+//Create an input list that dynamically adds items to the database and displays them;

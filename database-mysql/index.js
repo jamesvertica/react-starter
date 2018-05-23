@@ -1,4 +1,6 @@
 var mysql = require('mysql');
+var express = require('express');
+var app = express();
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -17,5 +19,16 @@ var selectAll = function(callback) {
         }
     });
 };
+/* UNDER CONSTRUCTION
+app.post('/users', function(req, res) {
+    // Get sent data.
+    var user = req.body;
+    // Do a MySQL query.
+    var query = connection.query('INSERT INTO users SET ?', user, function(err, result) {
+        // Neat!
+    });
+    res.end('Success');
+});
 
 module.exports.selectAll = selectAll;
+*/
