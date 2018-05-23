@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = { 
       items: [] 
-    }
+    } 
   }
 
   componentDidMount() {
@@ -29,8 +29,15 @@ class App extends React.Component {
     return (<div>
       <h1>Item List</h1>
       <List items={this.state.items}/>
+      <form>
+  <label>
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" />
+</form>
     </div>)
   }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+

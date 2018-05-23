@@ -19,16 +19,13 @@ var selectAll = function(callback) {
         }
     });
 };
+
 /* UNDER CONSTRUCTION
-app.post('/users', function(req, res) {
-    // Get sent data.
+app.post('/', function(req, res) {
     var user = req.body;
-    // Do a MySQL query.
-    var query = connection.query('INSERT INTO users SET ?', user, function(err, result) {
-        // Neat!
+    var query = connection.query('INSERT INTO items SET ?', user, function(err, result) {
     });
     res.end('Success');
 });
-
-module.exports.selectAll = selectAll;
 */
+module.exports.selectAll = selectAll;
